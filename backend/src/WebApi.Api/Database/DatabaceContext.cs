@@ -14,6 +14,7 @@ public class DatabaseContext : DbContext
     public DbSet<Expense> Expenses => Set<Expense>();
     public DbSet<Transaction> Transactions => Set<Transaction>();
     public DbSet<Notification> Notifications => Set<Notification>();
+    public DbSet<ChatMessage> ChatMessages => Set<ChatMessage>();
 
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {

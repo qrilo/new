@@ -6,7 +6,7 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="light-content" />
       <WebView
-        source={{ uri: "https://postova.appbk.top/" }}
+        source={{ uri: "https://postova.bobbo.top/" }}
         scalesPageToFit={false}
         allowsTextScaling={false}
         textZoom={100}

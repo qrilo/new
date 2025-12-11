@@ -9,7 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd888651-39c3-4646-a1d3-4fda8ae56b09" name="Changes" comment="" />
+    <list default="true" id="cd888651-39c3-4646-a1d3-4fda8ae56b09" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../csas-client-frontend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../../csas-client-frontend/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mobile/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobile/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mobile/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobile/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../postova-client-frontend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../../postova-client-frontend/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vub-client-frontend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../../vub-client-frontend/.env" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,13 +25,14 @@
     <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4c32958d8e8197ff3a8cad5383fa9a0f783157cc8c3f07a74cef668311de/ControllerEndpointRouteBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5ada2b76e4bdf12f7f393b06bc15d22d33ddfe75485f77473a74c15e7041f4/RelationalCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/72d23034c73c39a3158f19ddb774bc79ec8506bb8a6386094036acef98d7bf/FromBodyAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b741f17422844062bda644589ab84b32337fefcb677bc51957a62c3df8ad4d/AuthorizationAppBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -130,6 +137,7 @@
       <workItem from="1764593726728" duration="2947000" />
       <workItem from="1764855664733" duration="6851000" />
       <workItem from="1765356615976" duration="15114000" />
+      <workItem from="1765454146964" duration="4755000" />
     </task>
     <servers />
   </component>

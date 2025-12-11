@@ -86,6 +86,7 @@ builder.Services.AddScoped<IAccountsService, AccountsService>();
 builder.Services.AddScoped<INotificationsService, NotificationsService>();
 builder.Services.AddScoped<IUsersService, UsersService>();
 builder.Services.AddScoped<ITransactionsService, TransactionsService>();
+builder.Services.AddScoped<IChatMessagesService, ChatMessagesService>();
 
 var allowedOrigins = builder.Configuration.GetSection("Jwt:AllowedOrigins").Get<string[]>();
 

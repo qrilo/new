@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Poštová Banka",
+    "name": "Postova",
     "slug": "mobile",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -17,7 +17,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/vub.png",
+        "foregroundImage": "./assets/postova.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
