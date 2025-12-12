@@ -9,6 +9,7 @@ export const ChatsPage = () => {
   const { data: chats } = useChats({
     receiverId: id,
     enabled: true,
+    refetchInterval: 2000,
   });
 
   const { mutate: createChatMessage } = useCreateChat();
@@ -17,6 +18,10 @@ export const ChatsPage = () => {
   const [text, setText] = useState("");
 
   const bottomRef = useRef(null);
+
+  useEffect(() => {
+    setMessages(chats?.messages);
+  }, [chats]);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -105,7 +110,7 @@ const styles = {
   },
   messageBubble: {
     maxWidth: "70%",
-    padding: "0.7rem 1rem",
+    padding: "0.25rem 1rem",
     borderRadius: "1rem",
     fontSize: "1rem",
   },
