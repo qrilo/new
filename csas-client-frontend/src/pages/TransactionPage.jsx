@@ -207,7 +207,7 @@ const TransactionList = ({ transactions }) => {
                           <Flex
                             style={{
                               color:
-                                tx?.transactionType == "top"
+                                tx?.transactionType == "Top"
                                   ? "#2BA84A"
                                   : "#0E2C5B",
                               fontWeight: 500,
