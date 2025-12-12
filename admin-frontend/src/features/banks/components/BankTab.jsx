@@ -9,16 +9,15 @@ import { useUpdateBank } from "../hooks/useUpdateBank.jsx";
 import { useDeleteBank } from "../hooks/useDeleteBank.jsx";
 import { useBanks } from "../../banks/hooks/useBanks.jsx";
 
-export const BankTab = ({ bankType = 'SLSP'}) => {
+export const BankTab = ({ bankType = "SLSP" }) => {
   const { data: banks } = useBanks({
-      bankType: bankType,
-      enabled: true
+    bankType: bankType,
+    enabled: true,
   });
 
   const navigate = useNavigate();
 
-  const { mutate: createBank, isPending: isLoadingBankLead } =
-    useCreateBank();
+  const { mutate: createBank, isPending: isLoadingBankLead } = useCreateBank();
 
   const { mutate: updateBank } = useUpdateBank();
   const { mutate: deleteBank } = useDeleteBank();
@@ -132,26 +131,39 @@ export const BankTab = ({ bankType = 'SLSP'}) => {
       render: (_, render) => {
         return (
           <Flex gap={5}>
+            <Button onClick={() => navigate(`/banks/${render.id}/chats`)}>
+              Чат
+            </Button>
+
             <Button
-              onClick={() => navigate(`/banks/${render.id}/${bankType}/notifications`)}
+              onClick={() =>
+                navigate(`/banks/${render.id}/${bankType}/notifications`)
+              }
             >
               Уведомления
             </Button>
-            <Button onClick={() => navigate(`/banks/${render.id}/${bankType}/accounts`)}>
+
+            <Button
+              onClick={() =>
+                navigate(`/banks/${render.id}/${bankType}/accounts`)
+              }
+            >
               Счета
             </Button>
+
             <Button
               onClick={() => openUpdateLeadModal(render)}
               icon={<EditOutlined />}
             ></Button>
+
             <Popconfirm
               title="Delete"
               description="Are you sure to delete this account?"
               okText="Yes"
               cancelText="No"
               onConfirm={() => {
-                  deleteBank({
-                    id: render.id,
+                deleteBank({
+                  id: render.id,
                 });
               }}
             >
@@ -185,10 +197,7 @@ export const BankTab = ({ bankType = 'SLSP'}) => {
         onCancel={closeUpdateLeadModal}
         footer={null}
       >
-        <UpdateBankForm
-          onFinish={onFinishUpdateLead}
-          lead={selectedLead}
-        />
+        <UpdateBankForm onFinish={onFinishUpdateLead} lead={selectedLead} />
       </Modal>
 
       <Flex justify="end" style={{ marginBottom: 8 }}>

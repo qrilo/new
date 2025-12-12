@@ -12,6 +12,7 @@ import { NotFoundPage } from "../../pages/NotFoundPage.jsx";
 import { AccountsPage } from "../../features/accounts/pages/AccountsPage.jsx";
 import { BanksPage } from "../../features/banks/pages/BanksPage.jsx";
 import { NotificationsPage } from "../../features/notifications/pages/NotificationsPage.jsx";
+import { ChatsPage } from "../../features/chats/pages/ChatsPage.jsx";
 
 const PrivateRoute = ({ children, allowedRoles = [] }) => {
   const { isAuthenticated, role } = useAuth();
@@ -109,6 +110,14 @@ export const router = createBrowserRouter([
         element: (
           <PrivateRoute allowedRoles={["Admin"]}>
             <NotificationsPage />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "banks/:id/chats",
+        element: (
+          <PrivateRoute allowedRoles={["Admin"]}>
+            <ChatsPage />
           </PrivateRoute>
         ),
       },
