@@ -240,14 +240,20 @@ public class BanksService : IBanksService
 
     public async Task DeleteBank(Guid id)
     {
-        var bank = await _databaseContext.Banks.FirstOrDefaultAsync(bank => bank.Id == id && bank.UserId == _currentUserService.UserId);
+        var bank = await _databaseContext.Banks
+            .Include(bank => bank.User)
+            .Include(bank => bank.Expenses)
+            .Include(bank => bank.Contact)
+            .Include(bank => bank.Accounts)
+            .Include(bank => bank.Notifications)
+            .FirstOrDefaultAsync(bank => bank.Id == id && bank.UserId == _currentUserService.UserId);
+        
         if (bank is null)
         {
             throw new NotFoundException("Bank not found");
         } 
         
         _databaseContext.Banks.Remove(bank);   
-        
          await _databaseContext.SaveChangesAsync();
     }
 

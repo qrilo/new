@@ -66,18 +66,22 @@ namespace WebApi.Api.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Comment")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("CreateAtUtc")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Fullname")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Phone")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<int>("PinLength")

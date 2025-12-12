@@ -15,6 +15,14 @@ public class DatabaseContext : DbContext
     public DbSet<Transaction> Transactions => Set<Transaction>();
     public DbSet<Notification> Notifications => Set<Notification>();
     public DbSet<ChatMessage> ChatMessages => Set<ChatMessage>();
+    
+    /*
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfiguration(new BankEntityConfiguration());
+        modelBuilder.ApplyConfiguration(new AccountEntityConfiguration());
+    }
+    */
 
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
@@ -35,6 +43,7 @@ public class DatabaseContext : DbContext
     }
 }
 
+
 public class BankEntityConfiguration : IEntityTypeConfiguration<Bank>
 {
     public void Configure(EntityTypeBuilder<Bank> builder)
@@ -43,10 +52,32 @@ public class BankEntityConfiguration : IEntityTypeConfiguration<Bank>
             .HasOne(entity => entity.User)
             .WithMany()
             .HasForeignKey(entity => entity.UserId);
-
         builder
             .HasIndex(entity => entity.UserId)
             .IsUnique(false);
+        
+        builder
+            .HasOne(entity => entity.User)
+            .WithMany() 
+            .HasForeignKey(entity => entity.UserId)
+            .OnDelete(DeleteBehavior.Cascade); 
+        builder
+            .HasMany(entity => entity.Accounts)
+            .WithOne()
+            .HasForeignKey(account => account.BankId)
+            .OnDelete(DeleteBehavior.Cascade);
+
+        builder
+            .HasMany(entity => entity.Notifications)
+            .WithOne()
+            .HasForeignKey(notification => notification.BankId)
+            .OnDelete(DeleteBehavior.Cascade);
+
+        builder
+            .HasOne(entity => entity.Contact)
+            .WithOne()
+            .HasForeignKey<Contact>(contact => contact.BankId)
+            .OnDelete(DeleteBehavior.Cascade);  
     }
 }
 
