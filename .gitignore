@@ -1,3 +1,17 @@
+# Database files
+*.db
+*.db3
+*.sqlite
+*.sqlite3
+*.mdb
+*.accdb
+*.bak
+*.backup
+*.log
+*.db-shm
+*.db-wal
+
+
 # Logs
 logs
 *.log
