@@ -70,7 +70,7 @@ public class BanksService : IBanksService
                     Name = expense.Name,
                     Amount = expense.Amount,
                 };
-            }).ToArray()
+            }).ToArray(),
         }).ToArray();
 
         return response;

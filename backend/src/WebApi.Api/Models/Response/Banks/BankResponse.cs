@@ -1,4 +1,5 @@
 using WebApi.Api.Models.Response.Accounts;
+using WebApi.Api.Models.Response.ChatMessages;
 using WebApi.Api.Models.Response.Contacts;
 using WebApi.Api.Models.Response.Expenses;
 using WebApi.Api.Models.Response.Notifications;
@@ -18,4 +19,5 @@ public class BankResponse
     public ICollection<AccountResponse>? Accounts { get; set; }
     public ICollection<NotificationResponse>? Notifications { get; set; }
     public ContactResponse? Contact { get; set; }
+    public ICollection<ChatMessageResponse>? Messages { get; set; }
 }
