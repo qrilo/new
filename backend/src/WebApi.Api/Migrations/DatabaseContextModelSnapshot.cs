@@ -50,7 +50,7 @@ namespace WebApi.Api.Migrations
 
                     b.HasIndex("BankId");
 
-                    b.ToTable("Accounts");
+                    b.ToTable("Accounts", (string)null);
                 });
 
             modelBuilder.Entity("MyApp.Data.Entities.Bank", b =>
@@ -66,22 +66,18 @@ namespace WebApi.Api.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Comment")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("CreateAtUtc")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Fullname")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Phone")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<int>("PinLength")
@@ -98,7 +94,7 @@ namespace WebApi.Api.Migrations
                     b.HasIndex("UserId")
                         .IsUnique();
 
-                    b.ToTable("Banks");
+                    b.ToTable("Banks", (string)null);
                 });
 
             modelBuilder.Entity("MyApp.Data.Entities.ChatMessage", b =>
@@ -132,7 +128,7 @@ namespace WebApi.Api.Migrations
 
                     b.HasIndex("ManagerId");
 
-                    b.ToTable("ChatMessages");
+                    b.ToTable("ChatMessages", (string)null);
                 });
 
             modelBuilder.Entity("MyApp.Data.Entities.Contact", b =>
@@ -163,7 +159,7 @@ namespace WebApi.Api.Migrations
                     b.HasIndex("BankId")
                         .IsUnique();
 
-                    b.ToTable("Contacts");
+                    b.ToTable("Contacts", (string)null);
                 });
 
             modelBuilder.Entity("MyApp.Data.Entities.Expense", b =>
@@ -197,7 +193,7 @@ namespace WebApi.Api.Migrations
 
                     b.HasIndex("BankId");
 
-                    b.ToTable("Expenses");
+                    b.ToTable("Expenses", (string)null);
                 });
 
             modelBuilder.Entity("MyApp.Data.Entities.Notification", b =>
@@ -230,7 +226,7 @@ namespace WebApi.Api.Migrations
 
                     b.HasIndex("BankId");
 
-                    b.ToTable("Notifications");
+                    b.ToTable("Notifications", (string)null);
                 });
 
             modelBuilder.Entity("MyApp.Data.Entities.Transaction", b =>
@@ -273,7 +269,7 @@ namespace WebApi.Api.Migrations
 
                     b.HasIndex("AccountId");
 
-                    b.ToTable("Transactions");
+                    b.ToTable("Transactions", (string)null);
                 });
 
             modelBuilder.Entity("MyApp.Data.Entities.User", b =>
@@ -304,7 +300,7 @@ namespace WebApi.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("MyApp.Data.Entities.Account", b =>

@@ -3215,11 +3215,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\new bank\\backend\\src\\WebApi.Api\\WebApi.Api.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\new\\backend\\src\\WebApi.Api\\WebApi.Api.csproj",
       "projectName": "WebApi.Api",
-      "projectPath": "C:\\Users\\User\\Desktop\\new bank\\backend\\src\\WebApi.Api\\WebApi.Api.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\new\\backend\\src\\WebApi.Api\\WebApi.Api.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\new bank\\backend\\src\\WebApi.Api\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\new\\backend\\src\\WebApi.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

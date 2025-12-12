@@ -9,13 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd888651-39c3-4646-a1d3-4fda8ae56b09" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../csas-client-frontend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../../csas-client-frontend/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobile/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobile/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../mobile/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../mobile/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../postova-client-frontend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../../postova-client-frontend/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../vub-client-frontend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../../vub-client-frontend/.env" afterDir="false" />
-    </list>
+    <list default="true" id="cd888651-39c3-4646-a1d3-4fda8ae56b09" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,6 +132,7 @@
       <workItem from="1764855664733" duration="6851000" />
       <workItem from="1765356615976" duration="15114000" />
       <workItem from="1765454146964" duration="4755000" />
+      <workItem from="1765537920075" duration="329000" />
     </task>
     <servers />
   </component>
